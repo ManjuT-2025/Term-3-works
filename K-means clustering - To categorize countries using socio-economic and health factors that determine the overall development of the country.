@@ -1,0 +1,27 @@
+Objective:
+To categorize countries using socio-economic and health factors that determine the overall development of the country.
+
+Data:
+Obtained from Unsupervised Learning on Country Data | Kaggle, by Rohan Kokkula; original source of data unknown.
+
+Problem Statement:
+HELP International has been able to raise $100 million. The CEO wants to use this money strategically and effectively and wants to fund programs in the countries that are most in need of aid. Your job is to categorize the countries using some socio-economic and health factors that determine the overall development of the country. In the end, you need to suggest how to allocate the funds among countries.
+
+About the organization:
+HELP International aims to create a network of changemakers and social entrepreneurs who understand the complexities of poverty and play an active role in efforts to improve the quality of life of some of the most vulnerable populations in the world. 
+
+Data
+Load Country-data.csv into a pandas dataframe. Print out the header. Use pandas.DataFrame.describe to summarize the data. Using markdown, explain the meaning of each column and make observations about the dataset.
+Use pandas.DataFrame.info to check if the entries are the correct datatype, and if there are any missing values. Use pandas.DataFrame.duplicates to check for duplicate entries. Fix the dataset so that there are no missing values, duplicate rows, or incorrect data types. Use markdown to make observations and explain what you have done.
+Drop the 'country' column and store it in a separate dataframe. Use seaborn.heatmap to display the correlation matrix of the features. Use seaborn.pairplot to generate scatter plots and histograms. Use markdown to make observations. 
+
+Modeling
+Use sklearn.preprocessing.StandardScaler to scale the data. Print the header.
+Use sklearn.cluster.KMeans to cluster the data. Try values of n_cluster in the range [2, 10]; calculate and store the silhouette score for each.
+Create a plot of silhouette score vs. n_clusters. Using this plot, justify the number of clusters for this use case in a markdown cell. Save the corresponding model as your best model.
+
+Conclusion
+Based on your analysis in step 1, choose a pair of columns and generate a scatter plot of the data. Use the model predictions to colour the points according to the cluster they belong to. Use markdown to comment on the plot.
+Generate a histogram that shows the number of countries in each cluster. Use markdown to comment on the histogram.
+Print out the names of the countries within each cluster. Use markdown to comment on the countries that show up in each cluster. State the order of the clusters from those that need aid the most, to those that need aid the least.
+Use markdown to describe which countries will get funds, and how much each will get.
