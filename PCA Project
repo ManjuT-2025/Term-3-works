@@ -1,0 +1,31 @@
+PCA Transformation
+Unsupervised Machine Learning Techniques used in this work were
+
+1. Clustering
+* Kmeans
+* Hierarchial clustering
+  *  Agglomerative
+  *  Divisive
+* DBSCAN
+
+2. Dimensionality reduction
+* PCA
+
+Objective
+---------
+To segment customers into groups for a targeted marketing strategy.
+
+Data:
+Obtained from Credit Card Dataset for Clustering | Kaggle, original source unknown.
+
+Problem Statement:
+The marketing department for a credit card company wants to learn more about the different kinds of customers they have in order to develop a marketing strategy that targets each group separately. As a data scientist, your job is to find the best way to divide the customers into groups, and to develop a description of each group to be used by the marketing strategists.
+
+Steps to be completed:
+Create a Jupyter notebook and complete the following steps:
+
+step 1: Data Preprocessing
+step 2: PCA Transformation
+step 3: Modelling and clustering
+step 4: selecting best model
+step 5: Conclusion and analysis
